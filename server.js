@@ -13,6 +13,10 @@ app.get('/artical-one', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', '../articalone.html'));
 });
 
+app.get('/artical-one', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'articaltwo.html'));
+});
+
 app.get('/artical-two', function (req, res) {
   res.send('artical Two requested and served');
 });
