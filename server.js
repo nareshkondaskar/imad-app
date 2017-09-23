@@ -29,6 +29,7 @@ function hash(input,salt)
 }
 
 app.get('/hash/:input', function (req, res) {
+    alert(request.param.input);
     var hashedString = hash(request.param.input,'Naresh Kondaskar');
     res.send(hashedString);
 });
